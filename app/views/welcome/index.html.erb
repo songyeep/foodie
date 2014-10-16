@@ -1,2 +1,117 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" id="navTitle">Food for Thought</a>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <li class="nav navbar-nav navbar-right">
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+              <button type="submit" class="btn btn-default" id="logIn">Log In</button>
+              <button type="submit" class="btn btn-default" id="signUp">Sign Up</button>
+              </div>
+            </form>
+          </ul>
+        </div>
+      </li>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="row">
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/steak3.jpg" class="home-images center-block" alt="Steak">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/sushi-boat.jpg" class="home-images center-block" alt="Sushi Boat">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/dumplings.jpg" class="home-images center-block" alt="Dumplings">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/satay.jpg" class="home-images center-block" alt="Satay">
+  </div>
+</div>
+
+
+<!--
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="/assets/steak.jpg" />
+    </li>
+    <li>
+      <img src="/assets/sushi-boat.jpg" />
+    </li>
+    <li>
+      <img src="/assets/dumplings.jpg" />
+    </li>
+    <li>
+      <img src="/assets/satay.jpg" />
+    </li>
+
+  </ul>
+</div> -->
+
+
+
+
+
+
+<div class="transbox">
+  <h1>Food for Thought</h1>
+  <p>Gourmet delivery to your doorstep.</p>
+  <p>Quality. Curated. Healthy.</p>
+  <p><font color="#7D1935">45</font> minutes delivery guaranteed. Get it by</p>
+  <p><span id="delivery-time"><%= @delivery_time.localtime.strftime("%I:%M %p") %></span></p>
+  <button type="button" class="btn btn-default btn-lg btn-block" id="explore-btn">Click here to explore</button>
+
+</div>
+<!--
+<br>
+
+
+<div class="row">
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/ahi-tuna.jpg" class="home-images center-block" alt="Ahi Tuna">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/friedrice.jpg" class="home-images center-block" alt="Fried Rice">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/pizza.jpg" class="home-images center-block" alt="Pizza">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <img src="/assets/dessert.jpg" class="home-images center-block" alt="Dessert">
+  </div>
+</div>
+ -->
+
+
+
