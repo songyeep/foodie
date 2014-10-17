@@ -81,19 +81,20 @@
   <p>Quality. Curated. Healthy.</p>
   <p><font color="#7D1935">45</font> minutes delivery guaranteed. Order now and get it by</p>
   <p><span id="delivery-time"><%= @delivery_time.localtime.strftime("%I:%M %p") %></span></p>
-  <button type="button" class="btn btn-default btn-lg btn-block" id="explore-btn">MENU</button>
+  <button type="button" class="btn btn-default btn-lg btn-block" id="explore-btn">Explore our exquisite Menu</button>
 
 </div>
 
-  <div class="rec_image"><%= image_tag @item.photo_path %></div>
+  <div class="rec_image">
+  <%= link_to "#{image_tag @item.photo_path}".html_safe, url_for(controller: "food_item", action: "show", id: @item.id) %>
+  </div>
 
 <div class="rec_today">
   <p>Try our <%= @item.cuisine %> recommendation today: </p>
-  <p><font color="#7D1935"><%= @item.name %></font></p>
-  <p>for <%= @item.price %> HKD</p>
+  <p><font color="#7D1935">
+  <a href="/food_item/show/<%= @item.id %>"><%= @item.name %></a>
 
+  </font></p>
 </div>
-
-
 
 
