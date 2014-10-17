@@ -44,7 +44,7 @@
 
 
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-xs-3 col-md-3">
       <img src="/assets/steak3.jpg" class="home-images center-block" alt="Steak">
   </div>
@@ -57,61 +57,43 @@
   <div class="col-xs-3 col-md-3">
       <img src="/assets/satay.jpg" class="home-images center-block" alt="Satay">
   </div>
-</div>
-
-
-<!--
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="/assets/steak.jpg" />
-    </li>
-    <li>
-      <img src="/assets/sushi-boat.jpg" />
-    </li>
-    <li>
-      <img src="/assets/dumplings.jpg" />
-    </li>
-    <li>
-      <img src="/assets/satay.jpg" />
-    </li>
-
-  </ul>
 </div> -->
 
 
-
-
-
+<div class="row">
+  <div class="col-xs-3 col-md-3">
+      <%= image_tag @item.photo_path %>
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <%= image_tag @asian %>">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <%= image_tag @adventurous %>">
+  </div>
+  <div class="col-xs-3 col-md-3">
+      <%= image_tag @western %>">
+  </div>
+</div>
 
 <div class="transbox">
   <h1>Food for Thought</h1>
   <p>Gourmet delivery to your doorstep.</p>
   <p>Quality. Curated. Healthy.</p>
-  <p><font color="#7D1935">45</font> minutes delivery guaranteed. Get it by</p>
+  <p><font color="#7D1935">45</font> minutes delivery guaranteed. Order now and get it by</p>
   <p><span id="delivery-time"><%= @delivery_time.localtime.strftime("%I:%M %p") %></span></p>
-  <button type="button" class="btn btn-default btn-lg btn-block" id="explore-btn">Click here to explore</button>
+  <button type="button" class="btn btn-default btn-lg btn-block" id="explore-btn">MENU</button>
 
 </div>
-<!--
-<br>
 
+  <div class="rec_image"><%= image_tag @item.photo_path %></div>
 
-<div class="row">
-  <div class="col-xs-3 col-md-3">
-      <img src="/assets/ahi-tuna.jpg" class="home-images center-block" alt="Ahi Tuna">
-  </div>
-  <div class="col-xs-3 col-md-3">
-      <img src="/assets/friedrice.jpg" class="home-images center-block" alt="Fried Rice">
-  </div>
-  <div class="col-xs-3 col-md-3">
-      <img src="/assets/pizza.jpg" class="home-images center-block" alt="Pizza">
-  </div>
-  <div class="col-xs-3 col-md-3">
-      <img src="/assets/dessert.jpg" class="home-images center-block" alt="Dessert">
-  </div>
+<div class="rec_today">
+  <p>Try our <%= @item.cuisine %> recommendation today: </p>
+  <p><font color="#7D1935"><%= @item.name %></font></p>
+  <p>for <%= @item.price %> HKD</p>
+
 </div>
- -->
+
 
 
 
